@@ -66,14 +66,24 @@ background-size: 1800% 1800%;
 Navigation Bar Section 
 -->
 <div class="navbar">
-	<div class="navbar-inner">
+	<div class="navbar-inner" style=" align-items: center;">
 		<div class="container">
 			<a data-target=".nav-collapse" data-toggle="collapse"
 				class="btn btn-navbar"> <span class="icon-bar"></span> <span
 				class="icon-bar"></span> <span class="icon-bar"></span>
 			</a>
-			<div class="nav-collapse">
+			<div class="nav-collapse " >
 				<ul class="nav">
+					<li class=""><a href="<c:url value="/${ item.url }"/>"></a></li>
+					<li class=""><a href="<c:url value="/${ item.url }"/>"></a></li>
+					<li class=""><a href="<c:url value="/${ item.url }"/>"></a></li>
+					<li class=""><a href="<c:url value="/${ item.url }"/>"></a></li>
+					<li class=""><a href="<c:url value="/${ item.url }"/>"></a></li>
+					<li class=""><a href="<c:url value="/${ item.url }"/>"></a></li>
+					<li class=""><a href="<c:url value="/${ item.url }"/>"></a></li>
+					<li class=""><a href="<c:url value="/${ item.url }"/>"></a></li>
+					<li class=""><a href="<c:url value="/${ item.url }"/>"></a></li>
+					<li class=""><a href="<c:url value="/${ item.url }"/>"></a></li>
 					<c:forEach var="item" items="${ menus }" varStatus="index">
 						<c:if test="${index.first}">
 								<li class="active">

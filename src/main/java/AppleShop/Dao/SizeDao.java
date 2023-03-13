@@ -6,8 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import AppleShop.Entity.Customer;
-import AppleShop.Entity.CustomerMapper;
 import AppleShop.Entity.Size;
 import AppleShop.Entity.SizeMapper;
 

@@ -16,43 +16,43 @@ public class SizeController {
 	@Autowired
 	private SizeService sizeService;
 	
-	@RequestMapping(value={"/home_admin/size_list"})
+	@RequestMapping(value={"/"})
 	  public String listSize(Model model) {
 	    model.addAttribute("listSize", sizeService.findAll());    
 	    return "admin/size/size_list";
 	  }
-	 @RequestMapping("/home_admin/size_save")
+	 @RequestMapping("/size_save")
 	  public String insertSize(Model model) {
 	    model.addAttribute("size", new Size());
 	    return "admin/size/size_save";
 	  }
-	  @RequestMapping("/home_admin/size_view/{id}")
+	  @RequestMapping("/size_view/{id}")
 	  public String viewSize(@PathVariable int id, Model model) {
 	    Size size = sizeService.findById(id);
 	    model.addAttribute("size", size);
 	    return "admin/size/size_view";
 	  }
-	  @RequestMapping("/home_admin/size_update/{id}")
+	  @RequestMapping("/size_update/{id}")
 	  public String updateSize(@PathVariable int id, Model model) {
 	    Size size = sizeService.findById(id);
 	    model.addAttribute("size", size);
 	    return "admin/size/size_update";
 	  }
 	  
-	  @RequestMapping("/home_admin/saveSize")
+	  @RequestMapping("/saveSize")
 	  public String doSaveSize(@ModelAttribute("Size") Size size, Model model) {
 		  sizeService.save(size);
 	    model.addAttribute("listSize", sizeService.findAll());
 	    return "admin/size/size_list";
 	  }
-	  @RequestMapping("/home_admin/updateSize")
+	  @RequestMapping("/updateSize")
 	  public String doUpdateSize(@ModelAttribute("Size") Size size, Model model) {
 		  sizeService.update(size);
 	    model.addAttribute("listSize", sizeService.findAll());
 	    return "admin/size/size_list";
 	  }
 	  
-	  @RequestMapping("/home_admin/size_delete/{id}")
+	  @RequestMapping("/size_delete/{id}")
 	  public String doDeleteSize(@PathVariable int id, Model model) {
 		  sizeService.delete(id);
 	    model.addAttribute("listSize", sizeService.findAll());

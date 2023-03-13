@@ -21,19 +21,19 @@ td {
         <div class="page-wrapper">
            
             <div class="container-fluid">
-			<c:url value="/home_admin/size_save" var="urlSave" />
+			<c:url value="/size_save" var="urlSave" />
 
-			<c:url value="/home_admin/size_update" var="urlUpdate" />
-			<c:url value="/home_admin/size_Delete" var="urlDelete" />
-			<h1>Danh sách kích thước</h1>
-  <button type="button" class="btn btn-primary"><a style="color: #fff" href="${urlSave}">Thêm kích thước</a></button>
+			<c:url value="/size_update" var="urlUpdate" />
+			<c:url value="/size_delete" var="urlDelete" />
+			<h1>Danh sách kích thước sản phẩm</h1>
+  <button type="button" class="btn btn-primary"><a style="color: #fff" href="${urlSave}">Thêm kích thườc</a></button>
   
   <br />
   <br />
   <table class="table">
     <tr class="table-dark" >
       <th>Id</th>
-      <th>Size</th>
+      <th>Kích thước</th>
     
     
       <th>Edit</th>

@@ -34,9 +34,13 @@ Clients
 <!--
 Footer
 -->
-<footer class="footer">
-	<div class="row-fluid">
-		<div class="span2">
+<footer class="footer ">
+	<div class="row-fluid ">
+ 		
+		<div class="span2" >
+			
+		</div>
+		<div class="span2" >
 			<h5>Giới thiệu về Trang Web</h5>
 			<a href="#">YOUR ACCOUNT</a><br> <a href="#">PERSONAL
 				INFORMATION</a><br> <a href="#">ADDRESSES</a><br> <a href="#">DISCOUNT</a><br>
@@ -55,7 +59,7 @@ Footer
 				href="#">MANUFACTURERS</a><br> <a href="#">Giới thiệu máy
 				đổi trả</a> <br /> <a href="#">Chính sách đổi trả <br />
 		</div>
-		<div class="span6">
+		<div class="span2">
 			<div class="fs-ftcol  fs-ftcol2">
 				<ul class="fs-ftr2 clearfix">
 					<p class="fs-ftrtit" style="font-size: 15px;">Tư vấn mua hàng

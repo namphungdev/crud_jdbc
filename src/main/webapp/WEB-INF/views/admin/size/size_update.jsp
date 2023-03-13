@@ -12,10 +12,12 @@
         <div class="page-wrapper">
            
             <div class="container-fluid">
+            <h1>Chỉnh sửa kích thước:</h1>
             <button type="button" class="btn btn-primary"><a style="color: #fff" href="<c:url value="/home_admin/size_list" />">Danh sách kích thước</a></button>
-		
+			</br>
+			</br>
 			
-			<h1>Chỉnh sửa kích thước:</h1>
+			
 			<c:url value="/home_admin/updateSize" var="updateSize" />
 			<form:form action="${updateSize}" method="POST"
 				modelAttribute="size">
